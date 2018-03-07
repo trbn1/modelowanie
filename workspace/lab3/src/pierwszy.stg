@@ -1,0 +1,63 @@
+group pierwszy;
+
+int(i) ::= <<
+MOV A, #<i>
+>>
+
+dodaj(p1, p2) ::= << <p1> 
+PUSH A 
+<p2> 
+POP B 
+ADD A,B 
+>>
+
+odejmij(p1, p2) ::= << <p1> 
+PUSH A 
+<p2> 
+POP B 
+SUB A,B 
+>>
+
+pomnoz(p1, p2) ::= << <p1> 
+PUSH A 
+<p2> 
+POP B 
+SUB A,B 
+>>
+
+podziel(p1, p2) ::= << <p1> 
+PUSH A 
+<p2> 
+POP B 
+SUB A,B 
+>>
+
+dekl(zm) ::= <<
+DD <zm>
+>>
+
+podstaw(p1, p2) ::= <<
+<p2>
+MOV [<p1>], A
+>>
+
+odczyt(i) ::= <<
+PUSH [<i>]
+>>
+
+loop(p1,p2) ::= <<
+<p1>
+loop:
+DEC A
+JNZ loop
+>>
+
+if(p1,p2) ::= <<
+MOV [<p1>],A
+MOV [<p2>],B
+CMP A,B
+JE EQU
+JMP NOT_EQU
+EQU:
+NOT_EQU:
+>>
