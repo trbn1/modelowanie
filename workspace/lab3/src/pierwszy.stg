@@ -48,6 +48,9 @@ PUSH [<i>]
 loop(p1,p2) ::= <<
 <p1>
 loop:
+PUSH A
+<p2>
+POP A
 DEC A
 JNZ loop
 >>
