@@ -1,0 +1,15 @@
+  package TestTransAccel
+  public class Bean {
+    /**
+	 * @generated
+	 */
+	private  base_Class;
+
+    /**
+	 * @generated
+	 */    
+	public  getBase_Class() {
+      return this.base_Class;
+    }
+
+  }

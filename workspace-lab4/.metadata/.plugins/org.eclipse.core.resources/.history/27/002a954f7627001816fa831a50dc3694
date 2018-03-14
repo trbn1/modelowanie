@@ -1,0 +1,5 @@
+package org.eclipse.acceleo.module.sample.services;
+
+class UML2Services {
+
+}

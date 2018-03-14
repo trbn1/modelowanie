@@ -1,0 +1,38 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.eclipse.org/uml2/5.0.0/UML')/]
+
+[import org::eclipse::acceleo::module::sample::services::uml2services /]
+
+[template public generateElement(aClass : Class)] 
+ [comment @main /]
+[if (aClass.hasStereotype('Bean'))]
+[file (aClass.name.concat('.java'), false)]
+  public class [aClass.name.toUpperFirst()/] {
+  [for (p: Property | aClass.attribute) separator('\n')]
+    /**
+	 * @generated
+	 */
+	private [p.type.name/] [p.name/];
+  [/for]
+
+  [for (p: Property | aClass.attribute) separator('\n')]
+    /**
+	 * @generated
+	 */    
+	public [p.type.name/] get[p.name.toUpperFirst()/]() {
+      return this.[p.name/];
+    }
+  [/for]
+
+  [for (o: Operation | aClass.ownedOperation) separator('\n')]
+    /**
+	 * @generated NOT
+	 */    
+	public [o.type.name/] [o.name/]() {
+      // TODO should be implemented
+    }
+  [/for]
+  }
+[/file]
+[/if]
+[/template]

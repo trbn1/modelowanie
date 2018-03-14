@@ -1,0 +1,40 @@
+  package urbanizacja
+  public class Street {
+    /**
+	 * @generated
+	 */
+	private  Numbers;
+
+    /**
+	 * @generated
+	 */
+	private  Name;
+
+    /**
+	 * @generated
+	 */    
+	public  getNumbers() {
+      return this.Numbers;
+    }
+
+    /**
+	 * @generated
+	 */    
+	public  getName() {
+      return this.Name;
+    }
+
+    /**
+	 * @generated NOT
+	 */    
+	public  isNumber() {
+      // TODO should be implemented
+    }
+
+    /**
+	 * @generated NOT
+	 */    
+	public invalid crossing() {
+      // TODO should be implemented
+    }
+  }

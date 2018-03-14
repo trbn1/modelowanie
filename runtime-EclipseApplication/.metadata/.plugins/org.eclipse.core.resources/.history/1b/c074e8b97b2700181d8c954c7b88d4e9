@@ -1,0 +1,27 @@
+  package TestTransAccel
+  public class Switch {
+    /**
+	 * @generated
+	 */
+	private  base_DecisionNode;
+
+    /**
+	 * @generated
+	 */
+	private  expr;
+
+    /**
+	 * @generated
+	 */    
+	public  getBase_DecisionNode() {
+      return this.base_DecisionNode;
+    }
+
+    /**
+	 * @generated
+	 */    
+	public  getExpr() {
+      return this.expr;
+    }
+
+  }

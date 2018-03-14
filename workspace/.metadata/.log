@@ -2006,3 +2006,214 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/lab2-1/src/Exp
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
 !SUBENTRY 1 org.eclipse.core.resources 4 368 2018-02-28 12:37:06.697
 !MESSAGE Resource '/lab2-1/src/ExprLexer.java' does not exist.
+!SESSION 2018-03-14 11:22:55.173 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.dsl.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.dsl.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-03-14 11:23:10.007
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.deved.antlride.core 4 0 2018-03-14 11:23:13.831
+!MESSAGE Can't access to the console
+!STACK 0
+java.lang.NullPointerException: A null service reference is not allowed.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:617)
+	at org.deved.antlride.core.AntlrLanguageToolkit.getConsole(AntlrLanguageToolkit.java:95)
+	at org.deved.antlride.internal.core.builder.AntlrBuilder.build(AntlrBuilder.java:87)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildModule(StandardScriptBuilder.java:247)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildNatureModules(StandardScriptBuilder.java:195)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.build(StandardScriptBuilder.java:67)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.fullBuild(ScriptBuilder.java:432)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.build(ScriptBuilder.java:152)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.dltk.core 4 0 2018-03-14 11:23:14.347
+!MESSAGE Error building module
+!STACK 1
+org.eclipse.core.runtime.CoreException: Build fail
+	at org.deved.antlride.internal.core.builder.AntlrBuilder.build(AntlrBuilder.java:286)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildModule(StandardScriptBuilder.java:247)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildNatureModules(StandardScriptBuilder.java:195)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.build(StandardScriptBuilder.java:67)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.fullBuild(ScriptBuilder.java:432)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.build(ScriptBuilder.java:152)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at org.deved.antlride.internal.core.builder.AntlrBuilder.build(AntlrBuilder.java:174)
+	... 17 more
+!SUBENTRY 1 org.deved.antlride.core 4 0 2018-03-14 11:23:14.348
+!MESSAGE Build fail
+!STACK 0
+java.lang.NullPointerException
+	at org.deved.antlride.internal.core.builder.AntlrBuilder.build(AntlrBuilder.java:174)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildModule(StandardScriptBuilder.java:247)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildNatureModules(StandardScriptBuilder.java:195)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.build(StandardScriptBuilder.java:67)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.fullBuild(ScriptBuilder.java:432)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.build(ScriptBuilder.java:152)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.deved.antlride.core 4 0 2018-03-14 11:23:14.412
+!MESSAGE Can't access to the console
+!STACK 0
+java.lang.NullPointerException: A null service reference is not allowed.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:617)
+	at org.deved.antlride.core.AntlrLanguageToolkit.getConsole(AntlrLanguageToolkit.java:95)
+	at org.deved.antlride.internal.core.builder.AntlrBuilder.build(AntlrBuilder.java:87)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildModule(StandardScriptBuilder.java:247)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildNatureModules(StandardScriptBuilder.java:195)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.build(StandardScriptBuilder.java:67)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.fullBuild(ScriptBuilder.java:432)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.build(ScriptBuilder.java:152)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.deved.antlride.core 4 0 2018-03-14 11:23:14.422
+!MESSAGE Can't access to the console
+!STACK 0
+java.lang.NullPointerException: A null service reference is not allowed.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:617)
+	at org.deved.antlride.core.AntlrLanguageToolkit.getConsole(AntlrLanguageToolkit.java:95)
+	at org.deved.antlride.internal.core.builder.AntlrBuilder.build(AntlrBuilder.java:87)
+	at org.deved.antlride.internal.core.builder.AntlrBuilder.build(AntlrBuilder.java:103)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildModule(StandardScriptBuilder.java:247)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildNatureModules(StandardScriptBuilder.java:195)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.build(StandardScriptBuilder.java:67)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.fullBuild(ScriptBuilder.java:432)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.build(ScriptBuilder.java:152)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.dltk.core 4 0 2018-03-14 11:23:14.424
+!MESSAGE Error building module
+!STACK 1
+org.eclipse.core.runtime.CoreException: Build fail
+	at org.deved.antlride.internal.core.builder.AntlrBuilder.build(AntlrBuilder.java:286)
+	at org.deved.antlride.internal.core.builder.AntlrBuilder.build(AntlrBuilder.java:103)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildModule(StandardScriptBuilder.java:247)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildNatureModules(StandardScriptBuilder.java:195)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.build(StandardScriptBuilder.java:67)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.fullBuild(ScriptBuilder.java:432)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.build(ScriptBuilder.java:152)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at org.deved.antlride.internal.core.builder.AntlrBuilder.build(AntlrBuilder.java:174)
+	... 18 more
+!SUBENTRY 1 org.deved.antlride.core 4 0 2018-03-14 11:23:14.425
+!MESSAGE Build fail
+!STACK 0
+java.lang.NullPointerException
+	at org.deved.antlride.internal.core.builder.AntlrBuilder.build(AntlrBuilder.java:174)
+	at org.deved.antlride.internal.core.builder.AntlrBuilder.build(AntlrBuilder.java:103)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildModule(StandardScriptBuilder.java:247)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildNatureModules(StandardScriptBuilder.java:195)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.build(StandardScriptBuilder.java:67)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.fullBuild(ScriptBuilder.java:432)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.build(ScriptBuilder.java:152)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.dltk.core 4 0 2018-03-14 11:23:14.426
+!MESSAGE Error deleting markers
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/lab2-1/src/Expr.tokens' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Resource.deleteMarkers(Resource.java:823)
+	at org.eclipse.dltk.compiler.problem.DefaultProblemFactory.deleteMarkers(DefaultProblemFactory.java:42)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildResources(StandardScriptBuilder.java:264)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.build(StandardScriptBuilder.java:74)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.fullBuild(ScriptBuilder.java:432)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.build(ScriptBuilder.java:152)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2018-03-14 11:23:14.426
+!MESSAGE Resource '/lab2-1/src/Expr.tokens' does not exist.

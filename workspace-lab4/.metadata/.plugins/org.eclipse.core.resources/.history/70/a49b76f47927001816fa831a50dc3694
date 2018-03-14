@@ -1,0 +1,43 @@
+  public class Street {
+    /**
+	 * @generated
+	 */
+	private int Numbers;
+
+    /**
+	 * @generated
+	 */
+	private String Name;
+
+    /**
+	 * @generated
+	 */    
+	public int getNumbers() {
+      return this.Numbers;
+    }
+
+    /**
+	 * @generated
+	 */    
+	public String getName() {
+      return this.Name;
+    }
+
+    /**
+	 * @generated NOT
+	 */    
+	public boolean isNumber() {
+	  // Start of user code isNumber
+      // TODO should be implemented
+	  // End of user code
+    }
+
+    /**
+	 * @generated NOT
+	 */    
+	public invalid crossing() {
+	  // Start of user code crossing
+      // TODO should be implemented
+	  // End of user code
+    }
+  }

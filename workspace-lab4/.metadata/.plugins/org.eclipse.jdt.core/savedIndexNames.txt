@@ -1,0 +1,17 @@
+INDEX VERSION 1.129+/home/uml/bnowak/modelowanie/workspace-lab4/.metadata/.plugins/org.eclipse.jdt.core
+386881499.index
+1434113512.index
+2700144398.index
+2265780982.index
+3443970853.index
+884006584.index
+3679384023.index
+3072949020.index
+3055471326.index
+206558219.index
+2748119642.index
+976473924.index
+4016839085.index
+1212024431.index
+2370130841.index
+1615595095.index

@@ -1,0 +1,15 @@
+  package urbanizacja
+  public class Locality {
+    /**
+	 * @generated
+	 */
+	private  Inhabitants;
+
+    /**
+	 * @generated
+	 */    
+	public  getInhabitants() {
+      return this.Inhabitants;
+    }
+
+  }
