@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="klasy" name="test2Acceleo_neon">
+    <property name="ECLIPSE_HOME" value="../../../../../../opt/eclipse/dsl-latest-released/eclipse"/>
+    <property name="ECLIPSE_WORKSPACE" value="../.."/>
+
+    <!-- The classpath with only the dependencies used by the project -->
+    <path id="test2Acceleo_neon.libraryclasspath">
+        <pathelement location="${ECLIPSE_WORKSPACE}/test2Acceleo_neon/bin"/>
+    </path>
+
+    <path id="test2Acceleo_neon.classpath">
+        <path refid="test2Acceleo_neon.libraryclasspath"/>
+    </path>
+
+    <!-- The classpath with only the jars available in the plugin folder of Eclipse -->
+    <path id="test2Acceleo_neon.libraryclasspath.alljars">
+        <pathelement location="../test2Acceleo_neon/bin"/>
+        <fileset dir="${ECLIPSE_HOME}/plugins/" includes="*.jar"/>
+    </path>
+
+    <path id="test2Acceleo_neon.classpath.alljars">
+        <path refid="test2Acceleo_neon.libraryclasspath.alljars"/>
+    </path>
+
+    <!-- The default task with the jars used by this project -->
+    <target name="klasy">
+        <java classname="test2Acceleo.main.Klasy" classpathref="test2Acceleo_neon.classpath">
+            <arg value="${model}"/>
+            <arg value="${target}"/>
+        </java>
+    </target>
+
+    <!--
+        In case of problem you can also try with all the jar available in your Eclipse
+        Keep in mind that having two versions of the same jar can create problems
+    -->
+    <target name="klasy.alljars">
+        <java classname="test2Acceleo.main.Klasy" classpathref="test2Acceleo_neon.classpath">
+            <arg value="${model}"/>
+            <arg value="${target}"/>
+        </java>
+    </target>
+</project>
